@@ -4,15 +4,15 @@ import streamlit as st
 st.markdown( """ 
             <style>
                 /* Target the expander header */
-                div[data-testid="stExpander"] > div:first-child {
+                div[data-testid="stExpander"] > details > summary {
                     background-color: #FAEBD7;
                     color: black;
                     font-size: 16px;
                     font-weight: bold;
                 }
                 /* Target the expander content */
-                div[data-testid="stExpander"] > div:nth-child(2) {
-                    background-color: red;
+                div[data-testid="stExpander"] > details > div {
+                    background-color: white;
                     color: blue;
                     padding: 10px;
                     border: 1px solid #FAEBD7;
